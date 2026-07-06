@@ -1,4 +1,4 @@
-# Complex
+# KraftNote
 
 A cross-platform page editor built with **Kotlin Multiplatform (KMP)**. One shared codebase compiles to Android, Desktop, and Web targets, with a shared server backend.
 

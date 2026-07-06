@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Complex</string>
+    <string name="my_pages">Мои страницы</string>
+    <string name="create_page">Создать страницу</string>
+    <string name="untitled">Без названия</string>
+    <string name="empty_page">Пустая страница</string>
+    <string name="updated">Обновлено: </string>
+    <string name="delete">Удалить</string>
+    <string name="editor">Редактор</string>
+    <string name="back">Назад</string>
+    <string name="save">Сохранить</string>
+    <string name="title_hint">Заголовок</string>
+    <string name="content_hint">Содержимое (Markdown)</string>
+    <string name="preview">Предпросмотр:</string>
+    <string name="new_page_title">Новая страница</string>
+</resources>

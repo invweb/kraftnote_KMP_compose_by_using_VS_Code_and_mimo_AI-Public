@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Complex</string>
+    <string name="my_pages">Meine Seiten</string>
+    <string name="create_page">Seite erstellen</string>
+    <string name="untitled">Ohne Titel</string>
+    <string name="empty_page">Leere Seite</string>
+    <string name="updated">Aktualisiert: </string>
+    <string name="delete">Löschen</string>
+    <string name="editor">Editor</string>
+    <string name="back">Zurück</string>
+    <string name="save">Speichern</string>
+    <string name="title_hint">Titel</string>
+    <string name="content_hint">Inhalt (Markdown)</string>
+    <string name="preview">Vorschau:</string>
+    <string name="new_page_title">Neue Seite</string>
+</resources>

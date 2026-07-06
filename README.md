@@ -28,7 +28,7 @@ All platforms connect to a shared Ktor server and synchronize data in real time 
 ## Project Structure
 
 ```
-complex/
+kraftnote/
 ├── shared/            # Shared KMP module (UI, ViewModel, models, API client)
 ├── androidApp/        # Android application
 ├── desktopApp/        # Desktop application (Compose Desktop)

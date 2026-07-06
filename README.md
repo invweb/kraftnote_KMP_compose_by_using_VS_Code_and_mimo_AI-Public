@@ -24,6 +24,14 @@ All platforms connect to a shared Ktor server and synchronize data in real time 
 ![Desktop - Несколько записей](docs/screenshots/desktop_multiple_notes.png)
 ![Desktop - Редактирование](docs/screenshots/desktop_editing.png)
 
+### Android
+
+![Android - Пустой список](docs/screenshots/android_empty_list.png)
+![Android - Одна страница](docs/screenshots/android_one_page.png)
+![Android - Список страниц](docs/screenshots/android_pages.png)
+![Android - Пустой редактор](docs/screenshots/android_editor_empty.png)
+![Android - Редактор с Markdown](docs/screenshots/android_editor_content.png)
+
 ## Project Structure
 
 ```

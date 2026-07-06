@@ -15,6 +15,16 @@ A cross-platform page editor built with **Kotlin Multiplatform (KMP)**. One shar
 
 All platforms connect to a shared Ktor server and synchronize data in real time (polling every 3 seconds).
 
+## Screenshots
+
+### Android
+
+![Android](docs/screenshots/screenshot_android.png)
+
+### Web
+
+![Web](docs/screenshots/screenshot_web.png)
+
 ## Project Structure
 
 ```

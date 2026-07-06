@@ -9,6 +9,8 @@ plugins {
 }
 
 kotlin {
+    applyDefaultHierarchyTemplate()
+
     androidTarget {
         compilations.all {
             kotlinOptions {
@@ -25,6 +27,17 @@ kotlin {
         binaries.executable()
     }
 
+    listOf(
+        iosX64(),
+        iosArm64(),
+        iosSimulatorArm64()
+    ).forEach { iosTarget ->
+        iosTarget.binaries.framework {
+            baseName = "Shared"
+            isStatic = false
+        }
+    }
+
     sourceSets {
         getByName("commonMain") {
             dependencies {
@@ -37,6 +50,7 @@ kotlin {
                 implementation(libs.datetime)
                 implementation(libs.ktor.client.core)
                 implementation(libs.ktor.client.content.negotiation)
+                implementation(libs.serialization.json)
                 implementation(libs.ktor.serialization.json)
             }
         }
@@ -58,6 +72,12 @@ kotlin {
         getByName("wasmJsMain") {
             dependencies {
                 implementation(libs.ktor.client.js)
+            }
+        }
+
+        val iosMain by getting {
+            dependencies {
+                implementation(libs.ktor.client.darwin)
             }
         }
     }

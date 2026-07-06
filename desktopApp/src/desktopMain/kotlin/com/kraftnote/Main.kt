@@ -1,12 +1,12 @@
-package com.complex
+package com.kraftnote
 
 import androidx.compose.runtime.remember
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
 import androidx.compose.ui.unit.dp
-import com.complex.database.ApiPageRepository
-import com.complex.viewmodel.PageViewModel
+import com.kraftnote.database.ApiPageRepository
+import com.kraftnote.viewmodel.PageViewModel
 
 fun main() = application {
     val windowState = rememberWindowState(
@@ -21,7 +21,7 @@ fun main() = application {
     Window(
         onCloseRequest = ::exitApplication,
         state = windowState,
-        title = "Complex - Page Editor"
+        title = "KraftNote - Page Editor"
     ) {
         App(viewModel = viewModel)
     }

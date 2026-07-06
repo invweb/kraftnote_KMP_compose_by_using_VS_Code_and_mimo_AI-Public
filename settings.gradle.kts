@@ -26,7 +26,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Complex"
+rootProject.name = "KraftNote"
 
 include(":shared")
 include(":desktopApp")

@@ -64,7 +64,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.complex.shared"
+    namespace = "com.kraftnote.shared"
     compileSdk = 35
 
     defaultConfig {

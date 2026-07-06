@@ -1,7 +1,7 @@
-package com.complex.database
+package com.kraftnote.database
 
-import com.complex.model.Page
-import com.complex.repository.PageRepository
+import com.kraftnote.model.Page
+import com.kraftnote.repository.PageRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow

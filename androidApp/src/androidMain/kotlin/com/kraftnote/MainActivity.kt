@@ -1,4 +1,4 @@
-package com.complex
+package com.kraftnote
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -6,8 +6,8 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import com.complex.database.ApiPageRepository
-import com.complex.viewmodel.PageViewModel
+import com.kraftnote.database.ApiPageRepository
+import com.kraftnote.viewmodel.PageViewModel
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

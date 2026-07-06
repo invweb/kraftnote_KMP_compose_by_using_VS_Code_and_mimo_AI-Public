@@ -29,11 +29,11 @@ kotlin {
 }
 
 android {
-    namespace = "com.complex"
+    namespace = "com.kraftnote"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.complex"
+        applicationId = "com.kraftnote"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

@@ -1,7 +1,7 @@
-package com.kraftnote.viewmodel
+package com.complex.viewmodel
 
-import com.kraftnote.model.Page
-import com.kraftnote.repository.PageRepository
+import com.complex.model.Page
+import com.complex.repository.PageRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob

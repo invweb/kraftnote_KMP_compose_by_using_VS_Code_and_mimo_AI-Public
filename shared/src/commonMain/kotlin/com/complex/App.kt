@@ -1,9 +1,9 @@
-package com.kraftnote
+package com.complex
 
 import androidx.compose.runtime.*
-import com.kraftnote.ui.MarkdownEditorScreen
-import com.kraftnote.ui.PageListScreen
-import com.kraftnote.viewmodel.PageViewModel
+import com.complex.ui.MarkdownEditorScreen
+import com.complex.ui.PageListScreen
+import com.complex.viewmodel.PageViewModel
 
 @Composable
 fun App(viewModel: PageViewModel) {

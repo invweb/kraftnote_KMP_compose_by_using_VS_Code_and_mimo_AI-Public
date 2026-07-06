@@ -1,14 +1,14 @@
-package com.kraftnote
+package com.complex
 
 import androidx.compose.runtime.remember
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.window.CanvasBasedWindow
-import com.kraftnote.database.ApiPageRepository
-import com.kraftnote.viewmodel.PageViewModel
+import com.complex.database.ApiPageRepository
+import com.complex.viewmodel.PageViewModel
 
 @OptIn(ExperimentalComposeUiApi::class)
 fun main() {
-    CanvasBasedWindow(title = "KraftNote - Page Editor") {
+    CanvasBasedWindow(title = "Complex - Page Editor") {
         val viewModel = remember {
             PageViewModel(ApiPageRepository(baseUrl = "http://localhost:8080"))
         }

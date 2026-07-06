@@ -1,4 +1,4 @@
-# KraftNote
+# Complex
 
 A cross-platform page editor built with **Kotlin Multiplatform (KMP)**. One shared codebase compiles to Android, Desktop, and Web targets, with a shared server backend.
 
@@ -18,7 +18,7 @@ All platforms connect to a shared Ktor server and synchronize data in real time 
 ## Project Structure
 
 ```
-kraftnote/
+complex/
 ├── shared/            # Shared KMP module (UI, ViewModel, models, API client)
 ├── androidApp/        # Android application
 ├── desktopApp/        # Desktop application (Compose Desktop)

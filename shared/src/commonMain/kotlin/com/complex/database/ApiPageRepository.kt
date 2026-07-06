@@ -1,7 +1,7 @@
-package com.kraftnote.database
+package com.complex.database
 
-import com.kraftnote.model.Page
-import com.kraftnote.repository.PageRepository
+import com.complex.model.Page
+import com.complex.repository.PageRepository
 import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.plugins.contentnegotiation.*

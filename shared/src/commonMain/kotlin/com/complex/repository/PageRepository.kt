@@ -1,6 +1,6 @@
-package com.kraftnote.repository
+package com.complex.repository
 
-import com.kraftnote.model.Page
+import com.complex.model.Page
 import kotlinx.coroutines.flow.Flow
 
 interface PageRepository {

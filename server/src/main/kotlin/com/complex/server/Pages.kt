@@ -1,4 +1,4 @@
-package com.kraftnote.server
+package com.complex.server
 
 import org.jetbrains.exposed.sql.Table
 

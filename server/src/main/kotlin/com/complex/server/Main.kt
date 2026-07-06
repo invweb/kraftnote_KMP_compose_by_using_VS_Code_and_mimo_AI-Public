@@ -1,4 +1,4 @@
-package com.kraftnote.server
+package com.complex.server
 
 import io.ktor.http.*
 import io.ktor.serialization.kotlinx.json.*
@@ -54,6 +54,6 @@ fun main() {
             pageRoutes()
         }
 
-        println("KraftNote server started at http://localhost:8080")
+        println("Server started at http://localhost:8080")
     }.start(wait = true)
 }

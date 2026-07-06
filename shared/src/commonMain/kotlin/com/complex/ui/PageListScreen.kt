@@ -1,4 +1,4 @@
-package com.kraftnote.ui
+package com.complex.ui
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -16,9 +16,9 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.kraftnote.model.Page
-import com.kraftnote.viewmodel.PageViewModel
-import kraftnote.shared.generated.resources.*
+import com.complex.model.Page
+import com.complex.viewmodel.PageViewModel
+import complex.shared.generated.resources.*
 import org.jetbrains.compose.resources.stringResource
 
 

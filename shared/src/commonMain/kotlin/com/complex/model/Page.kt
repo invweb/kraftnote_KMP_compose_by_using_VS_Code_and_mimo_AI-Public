@@ -1,4 +1,4 @@
-package com.kraftnote.model
+package com.complex.model
 
 import kotlinx.serialization.Serializable
 

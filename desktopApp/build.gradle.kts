@@ -23,20 +23,20 @@ kotlin {
 
 compose.desktop {
     application {
-        mainClass = "com.kraftnote.MainKt"
+        mainClass = "com.complex.MainKt"
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "KraftNote"
+            packageName = "Complex"
             packageVersion = "1.0.0"
             description = "Page Editor on Kotlin Multiplatform"
-            vendor = "KraftNote"
+            vendor = "Complex"
 
             macOS {
-                bundleID = "com.kraftnote.app"
+                bundleID = "com.complex.app"
             }
             windows {
-                menuGroup = "KraftNote"
+                menuGroup = "Complex"
                 upgradeUuid = "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
             }
         }

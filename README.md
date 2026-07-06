@@ -1,39 +1,39 @@
 # Complex
 
-Kotlin Multiplatform приложение для создания и редактирования страниц с поддержкой Markdown.
+A Kotlin Multiplatform application for creating and editing pages with Markdown support.
 
-## Платформы
+## Platforms
 
-| Платформа | Стек |
-|-----------|------|
+| Platform | Stack |
+|----------|-------|
 | **Android** | Compose Multiplatform + Ktor Client |
 | **Desktop** (Windows, macOS, Linux) | Compose Desktop + Ktor Client |
 | **Web** (Wasm) | Compose for Web + Ktor Client |
 | **Server** | Ktor Server + Exposed + H2 |
 
-Все платформы подключаются к общему Ktor-серверу и синхронизируют данные в реальном времени (опрос каждые 3 сек).
+All platforms connect to a shared Ktor server and synchronize data in real time (polling every 3 seconds).
 
-## Структура проекта
+## Project Structure
 
 ```
 complex/
-├── shared/            # Общий KMP модуль (UI, ViewModel, модели, API-клиент)
-├── androidApp/        # Android приложение
-├── desktopApp/        # Desktop приложение (Compose Desktop)
-├── webApp/            # Web приложение (Kotlin/Wasm)
-├── server/            # Ktor backend (REST API + H2 база)
+├── shared/            # Shared KMP module (UI, ViewModel, models, API client)
+├── androidApp/        # Android application
+├── desktopApp/        # Desktop application (Compose Desktop)
+├── webApp/            # Web application (Kotlin/Wasm)
+├── server/            # Ktor backend (REST API + H2 database)
 └── gradle/            # Version catalog (libs.versions.toml)
 ```
 
-## Запуск
+## Getting Started
 
-### Сервер (обязателен для работы всех клиентов)
+### Server (required for all clients)
 
 ```bash
 ./gradlew :server:run
 ```
 
-Сервер стартует на `http://localhost:8080`.
+Server starts at `http://localhost:8080`.
 
 ### Desktop
 
@@ -47,7 +47,7 @@ complex/
 ./gradlew :webApp:wasmJsBrowserDevelopmentRun
 ```
 
-Откройте `http://localhost:8081/` в браузере.
+Open `http://localhost:8081/` in your browser.
 
 ### Android
 
@@ -56,31 +56,31 @@ complex/
 adb install androidApp/build/outputs/apk/debug/androidApp-debug.apk
 ```
 
-> На эмуляторе сервер доступен через `10.0.2.2:8080`.
+> On the emulator, the server is accessible via `10.0.2.2:8080`.
 
 ## API
 
-| Метод | Путь | Описание |
-|-------|------|----------|
-| `GET` | `/api/pages` | Все страницы |
-| `GET` | `/api/pages/{id}` | Страница по ID |
-| `POST` | `/api/pages` | Создать страницу |
-| `PUT` | `/api/pages/{id}` | Обновить страницу |
-| `DELETE` | `/api/pages/{id}` | Удалить страницу |
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/api/pages` | List all pages |
+| `GET` | `/api/pages/{id}` | Get a page by ID |
+| `POST` | `/api/pages` | Create a page |
+| `PUT` | `/api/pages/{id}` | Update a page |
+| `DELETE` | `/api/pages/{id}` | Delete a page |
 
-## Локализация
+## Localization
 
-Поддерживаемые языки: **English**, **Русский**, **Deutsch**.
+Supported languages: **English**, **Russian**, **German**.
 
-Определяются автоматически по настройкам устройства. Ресурсы в `shared/src/commonMain/composeResources/values*/`.
+Language is determined automatically based on device settings. Resources are located in `shared/src/commonMain/composeResources/values*/`.
 
-## Стек технологий
+## Tech Stack
 
-- **Kotlin 2.1.0** — язык
-- **Compose Multiplatform 1.7.1** — UI
-- **Ktor 3.0.3** — HTTP клиент/сервер
+- **Kotlin 2.1.0** — language
+- **Compose Multiplatform 1.7.1** — UI framework
+- **Ktor 3.0.3** — HTTP client/server
 - **Exposed 0.44.1** — ORM
-- **H2 2.3.232** — файловая база данных
+- **H2 2.3.232** — file-based database
 - **kotlinx.serialization** — JSON
-- **kotlinx.coroutines** — асинхронность
-- **kotlinx-datetime** — работа со временем
+- **kotlinx.coroutines** — async
+- **kotlinx-datetime** — date/time utilities

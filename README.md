@@ -1,6 +1,8 @@
 # Complex
 
-A Kotlin Multiplatform application for creating and editing pages with Markdown support.
+A cross-platform page editor built with **Kotlin Multiplatform (KMP)**. One shared codebase compiles to Android, Desktop, and Web targets, with a shared server backend.
+
+> **Note:** This project uses **Kotlin Multiplatform (KMP)** — the general cross-platform technology that supports Android, iOS, Desktop, Web, and Server. It is **not** KMM (Kotlin Multiplatform Mobile), which is a subset of KMP limited to Android and iOS only.
 
 ## Platforms
 
@@ -76,7 +78,7 @@ Language is determined automatically based on device settings. Resources are loc
 
 ## Tech Stack
 
-- **Kotlin 2.1.0** — language
+- **Kotlin Multiplatform (KMP) 2.1.0** — cross-platform language
 - **Compose Multiplatform 1.7.1** — UI framework
 - **Ktor 3.0.3** — HTTP client/server
 - **Exposed 0.44.1** — ORM
